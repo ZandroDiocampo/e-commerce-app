@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="240dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/petfoodimg" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:textColor="@color/red_shadow_3"
+            android:textSize="18sp"
+            app:fontFamily="@font/anton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/view_product_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue_shadow_1"
+            android:text="View Details"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
